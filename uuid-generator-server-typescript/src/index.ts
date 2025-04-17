@@ -25,7 +25,7 @@ server.tool('generate_uuid', 'UUIDを生成する。', {}, async () => {
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error('UUID Generator MCP Server running on stdio');
+  console.log('UUID Generator MCP Server running on stdio');
 }
 
 main().catch(error => {
